@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Greet = ()=> {
+const Greet = (props)=> {
   return (
     <div>
-        <h2>Hi javaScript</h2>
+        <h2>{props.name} a.k.a {props.heroName}</h2>
+        {props.children}
     </div>
   )
 }
